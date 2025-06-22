@@ -105,5 +105,24 @@ RESTful and GraphQL APIs are provided for interacting with users, properties, bo
 7. Database Optimization
 Uses indexing and caching mechanisms to enhance data retrieval performance and reduce load. This is vital for scaling the application to support high user traffic.
 
+API Security:
+1. Authentication
+We will use token-based authentication (e.g., JWT) to verify user identity. This prevents unauthorized access to user accounts and ensures that only registered users can interact with protected endpoints.
+Importance: Prevents unauthorized users from accessing personal profiles, making bookings, or managing property data.
 
+2. Authorization
+Role-based access control (RBAC) will be used to differentiate between hosts and guests. Only authorized users will be allowed to perform specific actions, such as listing properties or managing bookings.
+Importance: Ensures users can only perform actions that match their role, protecting system integrity.
+
+3. Rate Limiting
+Implements throttling to limit the number of requests from a single IP or user in a given time frame. This protects the API from abuse and mitigates denial-of-service (DoS) attacks.
+Importance: Helps maintain system stability and defends against automated brute-force or spamming attempts.
+
+4. Data Validation & Input Sanitization
+All incoming data will be validated and sanitized to prevent injection attacks, such as SQL Injection or Cross-Site Scripting (XSS).
+Importance: Protects the database and users from malicious input that could compromise system behavior or data integrity.
+
+5. HTTPS Enforcement
+All API traffic will be served over HTTPS to encrypt data in transit.
+Importance: Secures sensitive information like login credentials and payment details from being intercepted over the network.
 
