@@ -126,3 +126,20 @@ Importance: Protects the database and users from malicious input that could comp
 All API traffic will be served over HTTPS to encrypt data in transit.
 Importance: Secures sensitive information like login credentials and payment details from being intercepted over the network.
 
+CI/CD Pipeline:
+
+CI/CD (Continuous Integration and Continuous Deployment) pipelines automate the process of building, testing, and deploying code changes. These pipelines help maintain code quality, detect bugs early, and ensure that new features are safely integrated into the main codebase without disrupting the system.
+For the Airbnb Clone project, implementing CI/CD ensures rapid and reliable delivery of updates, allowing the team to maintain agility while avoiding manual deployment errors.
+
+🔧 Tools Used:
+GitHub Actions: Automates tasks such as running tests, linting, and deployment every time code is pushed to the repository.
+Docker: Ensures the application runs consistently across different environments by containerizing the app and its dependencies.
+Docker Hub: Stores and distributes container images automatically built from GitHub.
+Heroku / Render / AWS / DigitalOcean (optional): Used for automated deployment of the backend service in staging or production.
+
+✅ Key Benefits:
+Faster integration of new features with automated testing
+Reduced risk of bugs and deployment errors
+Continuous delivery of a production-ready backend
+Improved collaboration through shared, reliable environments
+
