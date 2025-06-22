@@ -83,4 +83,27 @@ Relationships:
 A review is written by one user (Many-to-One).
 A review is for one property (Many-to-One).
 
+Feature Breakdown:
+1. User Management
+Handles user registration, login, and profile management. It allows users to sign up as guests or hosts, authenticate securely, and manage their personal information.
+
+2. Property Management
+Enables hosts to create, update, retrieve, and delete property listings. This feature is crucial for maintaining a dynamic and accurate catalog of available rentals on the platform.
+
+3. Booking System
+Allows users to reserve available properties and manage their bookings. It supports check-in and check-out details and ensures properties are not double-booked.
+
+4. Payment Processing
+Facilitates secure and traceable transactions for property bookings. This feature supports various payment methods and records the payment status for each booking.
+
+5. Review System
+Permits users to leave ratings and reviews on properties after their stay. This feedback system helps maintain quality standards and guides future guests in making informed decisions.
+
+6. API Endpoints
+RESTful and GraphQL APIs are provided for interacting with users, properties, bookings, payments, and reviews. This ensures developers can integrate or extend the platform easily.
+
+7. Database Optimization
+Uses indexing and caching mechanisms to enhance data retrieval performance and reduce load. This is vital for scaling the application to support high user traffic.
+
+
 
